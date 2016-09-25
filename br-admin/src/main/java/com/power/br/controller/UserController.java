@@ -21,6 +21,4 @@ public class UserController {
 		request.setAttribute("userList", userService.getUserList());
 		return "/index";
 	}
-	
-	
 }

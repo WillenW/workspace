@@ -17,6 +17,12 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.lanzhou</groupId>
+            <artifactId>br-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>jar</type>
+        </dependency>
     </dependencies>
     <build>
         <finalName>br-admin</finalName>
