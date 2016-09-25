@@ -19,6 +19,7 @@ public class UserController {
 	@RequestMapping("/getAllUser")
 	public String getAllUser(HttpServletRequest request){
 		request.setAttribute("userList", userService.getUserList());
+		System.out.println("SB王刚");
 		return "/index";
 	}
 }
