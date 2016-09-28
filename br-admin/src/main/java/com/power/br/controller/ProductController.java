@@ -19,26 +19,27 @@ public class ProductController {
 
 	@Autowired
 	private ProductService productService;
-	@RequestMapping(value="add-product",method={RequestMethod.GET})
+/*	@RequestMapping(value="add-product",method={RequestMethod.GET})
 	public String addProduct(HttpServletRequest request){
 		return "product/product_set";
 	}
 	
 	@RequestMapping(value="add-product",method={RequestMethod.POST})
-	public String addProduct(@RequestParam("product_img") CommonsMultipartFile file,HttpServletRequest request,String name,String memo){
+	public String addProduct(@RequestParam("product_img") CommonsMultipartFile product_img,HttpServletRequest request,String name,String memo){
 		String path = request.getSession().getServletContext().getRealPath("/")+"productImg";
-		String type = file.getOriginalFilename();
-            String fileName = new java.util.Date().getTime()+type.substring(type.indexOf(".",type.length()));  
+		String type = product_img.getOriginalFilename();
+            String fileName = new java.util.Date().getTime()+type.substring(type.indexOf("."),type.length());
             String savePath = "/productImg/"+fileName;
 	        File targetFile = new File(path, fileName);  
 	        if(!targetFile.exists()){  
 	            targetFile.mkdirs();  
 	        }
-	        try {  
-	        	file.transferTo(targetFile);  
+	        try {
+				product_img.transferTo(targetFile);
 	        } catch (Exception e) {  
-	            e.printStackTrace();  
-	        }  
+	            e.printStackTrace();
+
+			}
 	        ProductPOJO pojo = new ProductPOJO();
 	        pojo.setName(name);
 	        pojo.setMemo(memo);
@@ -49,5 +50,5 @@ public class ProductController {
 	@RequestMapping(value="product-list",method={RequestMethod.GET})
 	public String productList(){
 		return "product/product-list";
-	}
+	}*/
 }

@@ -16,10 +16,10 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 
-	@RequestMapping("/getAllUser")
-	public String getAllUser(HttpServletRequest request){
+/*	@RequestMapping("/getAllUser")
+*//*	public String getAllUser(HttpServletRequest request){
 		request.setAttribute("userList", userService.getUserList());
 		System.out.println("SB王刚");
 		return "/index";
-	}
+	}*/
 }
