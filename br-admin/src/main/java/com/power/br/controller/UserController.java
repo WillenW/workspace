@@ -1,13 +1,9 @@
 package com.power.br.controller;
 
-import javax.servlet.http.HttpServletRequest;
-
-
+import com.power.br.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import com.power.br.service.UserService;
 
 @Controller
 @RequestMapping("/user")
@@ -15,11 +11,4 @@ public class UserController {
 
 	@Autowired
 	private UserService userService;
-
-/*	@RequestMapping("/getAllUser")
-*//*	public String getAllUser(HttpServletRequest request){
-		request.setAttribute("userList", userService.getUserList());
-		System.out.println("SB王刚");
-		return "/index";
-	}*/
 }
