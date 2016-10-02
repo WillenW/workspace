@@ -11,7 +11,7 @@ public class User {
 
 	@Id
 	@Column(length = 11)
-	private Integer id;
+	private Integer id=10;
 
 	@Column(length = 20)
 	private String name;

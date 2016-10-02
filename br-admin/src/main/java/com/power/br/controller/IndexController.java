@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
 @Controller
 public class IndexController {
 
@@ -12,8 +13,17 @@ public class IndexController {
         System.out.println("1");
         return "index";
     }
+
     @RequestMapping(value = "/menu/{index}", method = {RequestMethod.POST})
     public String menu(@PathVariable("index") String index) {
-        return "menu/sidebar"+index;
+        return "menu/sidebar" + index;
     }
+
+    @RequestMapping(value = "/menu/sidebar",method = {RequestMethod.GET})
+    public String Upload()
+    {
+        System.out.println("111111");
+        return "menu/sidebar/uploads";
+    }
+
 }
