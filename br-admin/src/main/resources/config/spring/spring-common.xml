@@ -15,9 +15,9 @@
 	<!-- 配置数据源 -->
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
-		<property name="url" value="jdbc:mysql://localhost/power"></property>
+		<property name="url" value="jdbc:mysql://localhost/brdb"></property>
 		<property name="username" value="root"></property>
-		<property name="password" value="wangshoudao"></property>
+		<property name="password" value="123456"></property>
 	</bean>
 	
 	<!-- 配置SessionFactory -->

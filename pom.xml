@@ -10,6 +10,7 @@
     <modules>
         <module>br-admin</module>
         <module>br-common</module>
+        <module>br-web</module>
     </modules>
     <dependencies>
         <dependency>
