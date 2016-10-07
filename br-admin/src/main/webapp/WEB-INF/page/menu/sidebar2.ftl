@@ -4,7 +4,7 @@
     </div>
     <div class="accordionContent">
         <ul class="tree treeFolder">
-            <li><a href="demo_upload.html" target="navTab" rel="demo_upload">文件上传表单提交示例</a></li>
+            <li><a href="<@admin.ctx />/product-service-add" target="navTab" >新增</a></li>
             <li><a href="demo_page1.html" target="navTab" rel="demo_page1">查询我的客户</a></li>
             <li><a href="demo_page1.html" target="navTab" rel="demo_page2">表单查询页面</a></li>
             <li><a href="demo_page4.html" target="navTab" rel="demo_page4">表单录入页面</a></li>
